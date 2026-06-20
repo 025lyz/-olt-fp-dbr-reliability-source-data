@@ -1,0 +1,4 @@
+condition,targets,num_trials,thickness_sigma_nm,index_sigma_frac,mean_yield,median_yield,robust_valid_targets_yield_ge_0p5,source_file
+thickness_only_main_reference_first20,20,60,5.0,0.0,0.6391666666666668,0.6166666666666667,15,reports/inference_time_hybrid_50targets_final_robustness_r60_summary.csv
+index_sigma_0p1pct,20,60,5.0,0.001,0.5808333333333333,0.6,13,reports/olt_index_sensitivity_hybrid_20targets_sigma5_index0p1pct_r60_correctdata.json
+index_sigma_0p5pct,20,60,5.0,0.005,0.49416666666666675,0.525,11,reports/olt_index_sensitivity_hybrid_20targets_sigma5_index0p5pct_r60_correctdata.json

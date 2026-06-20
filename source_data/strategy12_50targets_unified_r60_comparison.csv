@@ -1,0 +1,4 @@
+method,summary_json,num_targets,nominal_valid_targets,nominal_valid_rate,robust_valid_targets,robust_valid_rate,yield_mean,yield_median,yield_p90
+baseline,reports/baseline_strategy12_50targets_final_robustness_r60_summary.json,50,35,0.7,24,0.48,0.47133333333333327,0.475,0.9016666666666667
+old_teacher_replay,reports/teacher_replay_strategy12_50targets_final_robustness_r60_summary.json,50,33,0.66,24,0.48,0.4243333333333334,0.45,0.935
+inference_time_hybrid,reports/inference_time_hybrid_50targets_final_robustness_r60_summary.json,50,46,0.92,32,0.64,0.5583333333333333,0.5833333333333334,0.935

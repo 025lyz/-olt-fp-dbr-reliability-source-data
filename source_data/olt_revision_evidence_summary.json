@@ -1,0 +1,142 @@
+{
+  "dataset": "/Users/lcx/PycharmProjects/lum_agent/dataset/fp_dbr_data_100000_physics_aware_experiment.npz",
+  "source_table": "/Users/lcx/PycharmProjects/lum_agent/reports/olt_50target_source_data_table.csv",
+  "threshold_sensitivity_csv": "/Users/lcx/PycharmProjects/lum_agent/reports/olt_threshold_sensitivity.csv",
+  "fallback_statistics_csv": "/Users/lcx/PycharmProjects/lum_agent/reports/olt_fallback_statistics.csv",
+  "physics_interpretation_metrics_csv": "/Users/lcx/PycharmProjects/lum_agent/reports/olt_physics_interpretation_metrics.csv",
+  "local_parameter_sensitivity_csv": "/Users/lcx/PycharmProjects/lum_agent/reports/olt_local_parameter_sensitivity.csv",
+  "runtime_and_direct_tmm_baseline_csv": "/Users/lcx/PycharmProjects/lum_agent/reports/olt_runtime_and_direct_tmm_baseline.csv",
+  "fallback_statistics": [
+    {
+      "metric": "total_targets",
+      "count": 50,
+      "denominator": 50,
+      "fraction": 1.0
+    },
+    {
+      "metric": "fallback_selected_final_designs",
+      "count": 13,
+      "denominator": 50,
+      "fraction": 0.26
+    },
+    {
+      "metric": "primary_selected_final_designs",
+      "count": 37,
+      "denominator": 50,
+      "fraction": 0.74
+    },
+    {
+      "metric": "baseline_nominal_invalid_targets",
+      "count": 15,
+      "denominator": 50,
+      "fraction": 0.3
+    },
+    {
+      "metric": "targets_repaired_vs_baseline_to_hybrid_nominal_valid",
+      "count": 11,
+      "denominator": 15,
+      "fraction": 0.7333333333333333
+    },
+    {
+      "metric": "fallback_repairs_vs_baseline_to_hybrid_nominal_valid",
+      "count": 11,
+      "denominator": 15,
+      "fraction": 0.7333333333333333
+    },
+    {
+      "metric": "fallback_nominal_valid",
+      "count": 13,
+      "denominator": 13,
+      "fraction": 1.0
+    },
+    {
+      "metric": "fallback_robust_valid",
+      "count": 8,
+      "denominator": 13,
+      "fraction": 0.6153846153846154
+    },
+    {
+      "metric": "hybrid_unresolved_nominal_invalid",
+      "count": 4,
+      "denominator": 50,
+      "fraction": 0.08
+    }
+  ],
+  "physics_summary": {
+    "all": {
+      "num_targets": 50,
+      "abs_delta_d_H_vs_dataset_nm_mean": 12.216700134277344,
+      "abs_delta_d_H_vs_dataset_nm_median": 10.962127685546875,
+      "abs_delta_d_L_vs_dataset_nm_mean": 34.00859375,
+      "abs_delta_d_L_vs_dataset_nm_median": 32.475006103515625,
+      "abs_delta_L_c_vs_dataset_nm_mean": 340.67119750976565,
+      "abs_delta_L_c_vs_dataset_nm_median": 77.37408447265625,
+      "hybrid_peak_shift_nm_mean": 8.883129827451814,
+      "hybrid_peak_shift_nm_median": 8.008056640625,
+      "hybrid_yield_r60_mean": 0.5583333333333333,
+      "hybrid_yield_r60_median": 0.5833333333333334
+    },
+    "fallback": {
+      "num_targets": 13,
+      "abs_delta_d_H_vs_dataset_nm_mean": 13.364268376277042,
+      "abs_delta_d_H_vs_dataset_nm_median": 6.791748046875,
+      "abs_delta_d_L_vs_dataset_nm_mean": 41.07991849459135,
+      "abs_delta_d_L_vs_dataset_nm_median": 32.481689453125,
+      "abs_delta_L_c_vs_dataset_nm_mean": 930.8851459209735,
+      "abs_delta_L_c_vs_dataset_nm_median": 244.5595703125,
+      "hybrid_peak_shift_nm_mean": 8.421218324318911,
+      "hybrid_peak_shift_nm_median": 10.010009765625,
+      "hybrid_yield_r60_mean": 0.5448717948717949,
+      "hybrid_yield_r60_median": 0.6
+    },
+    "primary": {
+      "num_targets": 37,
+      "abs_delta_d_H_vs_dataset_nm_mean": 11.813500481682855,
+      "abs_delta_d_H_vs_dataset_nm_median": 11.68524169921875,
+      "abs_delta_d_L_vs_dataset_nm_mean": 31.52407424514358,
+      "abs_delta_d_L_vs_dataset_nm_median": 32.46832275390625,
+      "abs_delta_L_c_vs_dataset_nm_mean": 133.29872914907094,
+      "abs_delta_L_c_vs_dataset_nm_median": 57.4111328125,
+      "hybrid_peak_shift_nm_mean": 9.04993120358314,
+      "hybrid_peak_shift_nm_median": 7.757798936631945,
+      "hybrid_yield_r60_mean": 0.5630630630630631,
+      "hybrid_yield_r60_median": 0.5833333333333334
+    }
+  },
+  "local_parameter_sensitivity_summary": {
+    "L_c": {
+      "num_perturbations": 5,
+      "abs_delta_mse_mean": 1.6047025533933123e-05,
+      "abs_delta_mse_median": 1.5347221309706862e-05,
+      "abs_delta_peak_shift_nm_mean": 0.24024414062499994,
+      "abs_delta_peak_shift_nm_median": 0.0
+    },
+    "N": {
+      "num_perturbations": 5,
+      "abs_delta_mse_mean": 0.008494398328296522,
+      "abs_delta_mse_median": 0.007028577161134456,
+      "abs_delta_peak_shift_nm_mean": 18.651867675781247,
+      "abs_delta_peak_shift_nm_median": 16.2829833984375
+    },
+    "d_H": {
+      "num_perturbations": 5,
+      "abs_delta_mse_mean": 0.004483447171646095,
+      "abs_delta_mse_median": 0.0038747177590535984,
+      "abs_delta_peak_shift_nm_mean": 22.22225341796875,
+      "abs_delta_peak_shift_nm_median": 21.421435546875003
+    },
+    "d_L": {
+      "num_perturbations": 5,
+      "abs_delta_mse_mean": 0.0015313548605261173,
+      "abs_delta_mse_median": 0.0007827288298031324,
+      "abs_delta_peak_shift_nm_mean": 10.250244140625,
+      "abs_delta_peak_shift_nm_median": 8.007958984375
+    }
+  },
+  "notes": [
+    "Threshold sensitivity recomputes validity from stored nominal metrics and r60 yields.",
+    "Physics metrics include quarter-wave and nearest Fabry-Perot order deviations evaluated at the dataset target wavelength.",
+    "Dataset-design deltas compare final hybrid parameters with the synthetic design that generated each target spectrum; they are not a uniqueness claim.",
+    "Local parameter sensitivity uses one-at-a-time perturbations around the final hybrid designs and real TMM reevaluation."
+  ]
+}

@@ -1,0 +1,75 @@
+# Code and Data Manifest
+
+This manifest lists the source-code and data artifacts relevant to the manuscript. The full project directory contains additional exploratory scripts and historical outputs; the files below are the active reproducibility set for the OLT submission.
+
+## Local Full-Project Datasets
+
+- `dataset/fp_dbr_data_100000_physics_aware_experiment.npz`
+  - Main in-house-material simulated dataset used for the OLT benchmark.
+- `dataset/fp_dbr_data_100000_physics_aware_database.npz`
+  - External-material database-constant dataset used for the separately trained replication.
+- `dataset/Amotchkina-Ge.txt`, `dataset/Kischkat-sio2.txt`
+  - Optical-constant tables used for external-material replication.
+- `dataset/riinfo_Ge_Amotchkina_nk.txt`, `dataset/riinfo_SiO2_Kischkat_nk.txt`
+  - Converted refractiveindex.info material tables.
+
+These large local dataset files are not bundled into the lightweight initial submission package. The package instead includes figure/table source-data exports and the active source-code copies. If the Editorial Manager system or editor requests the complete simulation datasets during review, upload the `.npz` datasets separately or provide them through the public repository record.
+
+## Main Source-Data Tables In This Package
+
+- `source_data/olt_50target_source_data_table.csv`
+- `source_data/olt_runtime_and_direct_tmm_baseline.csv`
+- `source_data/optimization_pycma_20targets_physics_score_320calls.csv`
+- `source_data/optimization_pycma_20targets_physics_score_320calls.json`
+- `source_data/olt_threshold_sensitivity.csv`
+- `source_data/olt_fallback_statistics.csv`
+- `source_data/olt_physics_interpretation_metrics.csv`
+- `source_data/olt_local_parameter_sensitivity.csv`
+- `source_data/olt_fig8_phase_mechanism_source_data.csv`
+- `source_data/olt_revision_evidence_summary.json`
+- `source_data/olt_index_sensitivity_summary.csv`
+- `source_data/strategy12_50targets_unified_r60_comparison.csv`
+- `source_data/*_summary.csv`
+- `source_data/*_summary.json`
+
+## Core Scripts
+
+The active review-stage script copies are included under `source_code/`.
+
+- `real/physics_tmm.py`
+  - TMM simulation utilities.
+- `real/evaluation_protocol.py`
+  - Peak detection and nominal-valid metric logic.
+- `real/evaluate_inverse_tmm.py`
+  - CVAE candidate evaluation and real-TMM reranking.
+- `real/evaluate_fabrication_robustness.py`
+  - r60 thickness-perturbation robustness protocol.
+- `real/evaluate_optimization_baselines.py`
+  - Direct random-search, bounded CMA-ES, and differential-evolution TMM baselines.
+- `real/run_inference_time_hybrid_pipeline.py`
+  - Hybrid inference-time workflow.
+- `real/refine_physics_prior_residual_candidates.py`
+  - Physics-prior residual fallback and local refinement.
+- `real/summarize_final_robustness.py`
+  - Robustness summary generation.
+- `real/export_hybrid_final_designs.py`
+  - Final selected-design export.
+- `real/make_olt_material_replication_figure.py`
+- `real/make_olt_mechanism_figure.py`
+  - Phase-residual and field-profile mechanism figure generation.
+- `real/remake_olt_figures.py`
+  - Figure-generation scripts.
+- `dataset/generate_dataset.py`
+  - Dataset-generation entry point.
+
+## Review-Stage Availability
+
+The manuscript currently states that source data and scripts are provided as supplementary/source files for review and will be deposited in a public repository upon acceptance. No DOI or public URL is claimed at initial submission because no public repository record has been created yet.
+
+## Python Dependency Note
+
+The conventional optimizer baseline uses the official `cma` package (`cma==4.4.4`) for the pycma bounded CMA-ES run. Other core scripts also require the existing project dependencies used for TMM simulation and scientific Python workflows, including `numpy`, `scipy`, `tmm`, and plotting libraries for figure generation.
+
+## Availability Statement Risk
+
+Elsevier's OLT research-data instructions follow the stronger research-data policy path: public repository deposit and citation/linking are preferred where possible. The current package includes source-data and source-code files for review and defers the public repository record until acceptance; add a repository URL/DOI before submission if the Editorial Manager system or editor requires it.
