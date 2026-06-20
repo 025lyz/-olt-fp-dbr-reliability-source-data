@@ -7,21 +7,13 @@ Reliability-oriented inverse design of mid-infrared Ge/SiO2 FP-DBR filters with 
 
 This repository provides review-stage source data and active scripts for the manuscript. It is intended to support reproducibility of the reported figures, tables, robustness summaries, and TMM-based evaluation workflow.
 
-## Package Contents
+## Repository Contents
 
-- `manuscript/`
-  - `main.pdf`: compiled submission PDF.
-  - `main.tex`: Elsevier `elsarticle` source.
-  - `references.bib`: BibTeX bibliography.
-  - `main.bbl`: generated bibliography file.
-  - `elsarticle-num.bst`: bibliography style used for local compilation.
-  - `figures/`: figures referenced by `main.tex`.
 - `source_data/`
   - Source-data tables and JSON summaries for the main benchmark, direct-TMM baseline, threshold sensitivity, fallback accounting, physics-interpretation metrics, external-material replication, and index-sensitivity check.
+  - Optical-constant text files used for the in-house-material TMM calculations and external-material sensitivity check.
 - `source_code/`
-  - Core Python scripts for TMM simulation, inverse-design evaluation, robustness analysis, direct-optimization baselines, and figure/table generation.
-- `admin/`
-  - Cover letter, CRediT statement, separate highlights file, author vitae draft, generative-AI statement, and submission checklist.
+  - Core Python scripts for dataset generation, TMM simulation, inverse-design evaluation, robustness analysis, direct-optimization baselines, and figure/table generation.
 - `code_manifest/`
   - Code and data manifest for review-stage supplementary/source-code preparation.
 
