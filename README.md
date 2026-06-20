@@ -11,7 +11,7 @@ This repository provides review-stage source data and active scripts for the man
 
 - `source_data/`
   - Source-data tables and JSON summaries for the main benchmark, direct-TMM baseline, threshold sensitivity, fallback accounting, physics-interpretation metrics, external-material replication, and index-sensitivity check.
-  - Optical-constant text files used for the in-house-material TMM calculations and external-material sensitivity check.
+  - Public external optical-constant text files used for the external-material sensitivity check. In-house thin-film optical-constant tables are not included in this public repository.
 - `source_code/`
   - Core Python scripts for dataset generation, TMM simulation, inverse-design evaluation, robustness analysis, direct-optimization baselines, and figure/table generation.
 - `code_manifest/`
