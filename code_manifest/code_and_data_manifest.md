@@ -10,8 +10,6 @@ This manifest lists the source-code and data artifacts relevant to the manuscrip
   - External-material database-constant dataset used for the separately trained replication.
 - `dataset/Amotchkina-Ge.txt`, `dataset/Kischkat-sio2.txt`
   - Optical-constant tables used for external-material replication.
-- `dataset/riinfo_Ge_Amotchkina_nk.txt`, `dataset/riinfo_SiO2_Kischkat_nk.txt`
-  - Converted refractiveindex.info material tables.
 The public external optical-constant text files are included in `source_data/`. The in-house thin-film optical-constant tables and large `.npz` simulation datasets are not bundled into this lightweight repository. The repository instead includes figure/table source-data exports and the active source-code copies. If the Editorial Manager system or editor requests the complete simulation datasets during review, upload the `.npz` datasets separately or provide them through a repository record with large-file support.
 
 ## Main Source-Data Tables In This Package
@@ -30,8 +28,6 @@ The public external optical-constant text files are included in `source_data/`. 
 - `source_data/strategy12_50targets_unified_r60_comparison.csv`
 - `source_data/Amotchkina-Ge.txt`
 - `source_data/Kischkat-sio2.txt`
-- `source_data/riinfo_Ge_Amotchkina_nk.txt`
-- `source_data/riinfo_SiO2_Kischkat_nk.txt`
 - `source_data/*_summary.csv`
 - `source_data/*_summary.json`
 
