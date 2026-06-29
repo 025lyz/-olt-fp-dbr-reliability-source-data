@@ -1,16 +1,18 @@
 # Code and Data Manifest
 
-This manifest lists the source-code and data artifacts relevant to the manuscript. The full project directory contains additional exploratory scripts and historical outputs; the files below are the active reproducibility set for the OLT submission.
+This manifest lists the source-code and data artifacts relevant to the manuscript. The full project directory contains additional exploratory scripts and historical outputs; the files below are the active reproducibility set for the Optics and Lasers in Engineering transfer submission.
 
 ## Local Full-Project Datasets
 
 - `dataset/fp_dbr_data_100000_physics_aware_experiment.npz`
-  - Main in-house-material simulated dataset used for the OLT benchmark.
+  - Main in-house-material simulated dataset used for the benchmark.
 - `dataset/fp_dbr_data_100000_physics_aware_database.npz`
   - External-material database-constant dataset used for the separately trained replication.
 - `dataset/Amotchkina-Ge.txt`, `dataset/Kischkat-sio2.txt`
   - Optical-constant tables used for external-material replication.
 The public external optical-constant text files are included in `source_data/`. The in-house thin-film optical-constant tables and large `.npz` simulation datasets are not bundled into this lightweight repository. The repository instead includes figure/table source-data exports and the active source-code copies. If the Editorial Manager system or editor requests the complete simulation datasets during review, upload the `.npz` datasets separately or provide them through a repository record with large-file support.
+
+The included `source_code/` files are the active script copies used in the full local project. Some scripts retain default paths to the full local dataset directory and to in-house optical-constant files. The compact public repository is therefore intended to support review of reported source-data tables and script provenance, not to guarantee a full end-to-end rerun without the separately stored datasets and in-house material files.
 
 ## Main Source-Data Tables In This Package
 
@@ -65,7 +67,7 @@ The active review-stage script copies are included under `source_code/`.
 
 ## Review-Stage Availability
 
-The manuscript currently states that source data and scripts are provided as supplementary/source files for review and will be deposited in a public repository upon acceptance. No DOI or public URL is claimed at initial submission because no public repository record has been created yet.
+The manuscript currently states that source data and scripts are provided as supplementary/source files for review and will be deposited in a public repository upon acceptance. This GitHub repository provides a lightweight public source-data and source-code record; a formal DOI or archival record can be added later if required by the journal.
 
 ## Python Dependency Note
 
@@ -73,4 +75,4 @@ The conventional optimizer baseline uses the official `cma` package (`cma==4.4.4
 
 ## Availability Statement Risk
 
-Elsevier's OLT research-data instructions follow the stronger research-data policy path: public repository deposit and citation/linking are preferred where possible. The current package includes source-data and source-code files for review and defers the public repository record until acceptance; add a repository URL/DOI before submission if the Editorial Manager system or editor requires it.
+Elsevier research-data instructions generally prefer repository deposit and citation/linking where possible. This package includes source-data and source-code files for review-stage reproducibility; add a formal repository URL/DOI to the manuscript if the Editorial Manager system or editor requires it.
