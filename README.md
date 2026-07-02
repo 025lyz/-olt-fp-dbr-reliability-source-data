@@ -1,9 +1,9 @@
-# OLE Transfer Source Data and Code Package
+# Optics Communications Source Data and Code Package
 
-Target journal: Optics and Lasers in Engineering.
+Target journal: Optics Communications.
 
 Manuscript title:
-TMM-validated reliability-oriented design of mid-infrared Ge/SiO2 FP-DBR filters
+TMM-validated resonance correction for inverse design of mid-infrared Ge/SiO2 FP-DBR filters
 
 This repository provides review-stage source data and active scripts for the manuscript. It is intended to support reproducibility of the reported figures, tables, robustness summaries, and transfer-matrix-method (TMM) based evaluation workflow.
 
@@ -19,10 +19,10 @@ This repository provides review-stage source data and active scripts for the man
 
 ## Current Submission Stance
 
-- The manuscript is positioned as a practical TMM-validated optical-engineering design workflow for mid-infrared Ge/SiO2 FP-DBR optical filters.
-- It does not claim complete device fabrication, FDTD validation, a PINN formulation, universal inverse design, or zero-shot material transfer.
+- The manuscript is positioned as a peak-aware, TMM-validated inverse-design study for resonant mid-infrared multilayer FP-DBR spectra.
+- It does not claim complete device fabrication, FDTD validation, a PINN formulation, universal inverse design, material-independent transfer, or a fundamentally new machine-learning architecture.
 - Data and code availability statements use review-stage supplementary/source-data/source-code wording. This public repository provides a lightweight source-data and source-code record for review-stage reproducibility.
-- The manuscript was revised before transfer to Optics and Lasers in Engineering to emphasize optical-method validation, resonance-level acceptance, and engineering tolerance criteria rather than a general AI or parameter-optimization claim.
+- The main optics contribution is the separation of global spectral error from resonance-level failures and the use of formula-guided local TMM refinement to correct shifted or spurious FP-DBR resonances.
 
 ## Large Dataset Note
 

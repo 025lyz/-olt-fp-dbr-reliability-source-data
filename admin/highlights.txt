@@ -1,5 +1,5 @@
-Reliability-oriented design workflow for mid-infrared Ge/SiO2 FP-DBR filters.
-TMM-based acceptance avoids surrogate-only selection errors.
-Strict peak-valid metrics reveal failures hidden by spectral MSE.
-Residual fallback corrects hard cases with local TMM refinement.
-Robust-valid rate improves from 48% to 64% under the r60 thickness-perturbation protocol.
+Peak-aware inverse design is studied for resonant Ge/SiO2 FP-DBR filters.
+TMM reranking avoids surrogate-only selection of shifted resonances.
+Global spectral MSE is separated from missing, false, and shifted peaks.
+Formula-guided local TMM refinement corrects resonance-shift failures.
+Phase-residual analysis links repaired spectra to the FP-DBR resonance condition.

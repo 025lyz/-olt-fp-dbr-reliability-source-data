@@ -1,6 +1,6 @@
 # Code and Data Manifest
 
-This manifest lists the source-code and data artifacts relevant to the manuscript. The full project directory contains additional exploratory scripts and historical outputs; the files below are the active reproducibility set for the Optics and Lasers in Engineering transfer submission.
+This manifest lists the source-code and data artifacts relevant to the manuscript. The full project directory contains additional exploratory scripts and historical outputs; the files below are the active reproducibility set for the Optics Communications submission.
 
 ## Local Full-Project Datasets
 
